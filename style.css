@@ -1,0 +1,108 @@
+:root {
+  --primary: gray;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto Mono;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  height: 85%;
+  display: flex;
+}
+
+.form {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 100px;
+}
+.form p {
+  color: var(--primary);
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form label {
+  font-weight: 500;
+}
+form label:nth-child(3) {
+  margin-top: 5px;
+}
+
+form input {
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid rgb(175, 175, 175);
+}
+form input::placeholder {
+  font-size: 15px;
+}
+
+.reset-pass {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.reset-pass div {
+  display: flex;
+  align-items: center;
+}
+.reset-pass input {
+  width: 15px;
+  height: 15px;
+  transition: 0.5s;
+}
+.reset-pass a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+button {
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
+.button button:nth-child(1) {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.897);
+}
+.button button:nth-child(1):active {
+  color: black;
+  background-color: white;
+}
+
+.form p:nth-of-type(2) span {
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form p:nth-of-type(2) span:hover {
+  color: rgb(62, 62, 173);
+  text-decoration: underline;
+}
