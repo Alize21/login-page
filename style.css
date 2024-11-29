@@ -20,6 +20,7 @@ body {
   width: 90%;
   height: 85%;
   display: flex;
+  /* justify-content: space-around; */
 }
 
 .form {
@@ -49,6 +50,7 @@ form input {
   padding: 13px;
   border-radius: 5px;
   border: 1px solid rgb(175, 175, 175);
+  font-size: 15px;
 }
 form input::placeholder {
   font-size: 15px;
@@ -105,4 +107,31 @@ button {
 .form p:nth-of-type(2) span:hover {
   color: rgb(62, 62, 173);
   text-decoration: underline;
+}
+
+/* thumb */
+.thumb {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(img/thumb.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.deskription {
+  position: absolute;
+  bottom: 25px;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  color: rgb(255, 238, 238);
+}
+.deskription p {
+  font-weight: bold;
 }
