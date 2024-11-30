@@ -18,15 +18,14 @@ body {
   margin: auto;
   background-color: white;
   width: 90%;
-  height: 85%;
+  height: 90%;
   display: flex;
-  /* justify-content: space-around; */
 }
 
 .form {
   width: 50%;
   box-sizing: border-box;
-  padding: 100px;
+  padding: 10vh;
 }
 .form p {
   color: var(--primary);
@@ -134,4 +133,19 @@ button {
 }
 .deskription p {
   font-weight: bold;
+}
+
+@media (max-width: 1390px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+  .thumb {
+    display: none;
+  }
+  .form {
+    margin: auto;
+    width: 100%;
+    padding: 5vh;
+  }
 }
